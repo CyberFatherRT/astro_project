@@ -2,9 +2,25 @@
 import Layout from "../layouts/Layout.astro";
 import Showcase from "../components/Showcase.astro";
 import Features from "../components/Features.astro";
+import Tabs from "../components/Tabs.astro";
 ---
 
 <Layout>
     <Showcase showExtra={true}/>
     <Features/>
+
+    <section class="page-content">
+        <div class="container">
+            <h2>Get Started With Astro</h2>
+            <p>Get a new Astro project up and running locally with out helpful create-astro CLI wizard!</p>
+            <Tabs heading={["NPM", "PNPM", "YARN"]} content={['$ npm create astro@latest', '$ pnpm create astro@latest', '$ yarn create astro']}/>
+            <h3>Start Building</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ex expedita necessitatibus non, optio quisquam
+                veritatis voluptatibus. Eligendi eveniet facere fugit iste nostrum officiis quasi quia temporibus velit!
+                Adipisci cum delectus dolore laborum possimus rem repudiandae saepe soluta tempora vero. Cum dicta doloribus
+                eveniet illo ipsa quaerat quam quidem.
+            </p>
+        </div>
+    </section>
 </Layout>

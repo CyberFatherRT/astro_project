@@ -3,7 +3,7 @@ export interface Props {
     dark?: boolean;
 }
 
-const { dark = false } = Astro.props as Props;
+const { dark = false} = Astro.props as Props;
 ---
 
 <div class={`card ${dark && 'dark'}`}>
